@@ -1,0 +1,27 @@
+version: "3"
+services:
+  client:
+    build:
+      context: ./client
+    ports:
+      - "3000:3000" # Adjust the ports as needed
+    depends_on:
+      - server
+
+  server:
+    build:
+      context: ./server
+    ports:
+      - "5001:5001" # Adjust the ports as needed
+    depends_on:
+      - database
+
+  database:
+    image: mongo
+    ports:
+      - "27017:27017" # Adjust the ports as needed
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
