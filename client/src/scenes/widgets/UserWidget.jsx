@@ -115,7 +115,7 @@ const UserWidget = ({ userId, picturePath }) => {
       {/* FOURTH ROW */}
       <Box p="1rem 0">
         <Typography fontSize="1rem" color={main} fontWeight="500" mb="1rem">
-          Social Profiles
+          MooGramal Profiles
         </Typography>
 
         <FlexBetween gap="1rem" mb="0.5rem">
@@ -125,7 +125,7 @@ const UserWidget = ({ userId, picturePath }) => {
               <Typography color={main} fontWeight="500">
                 Twitter
               </Typography>
-              <Typography color={medium}>Social Network</Typography>
+              <Typography color={medium}>MooGramal Network</Typography>
             </Box>
           </FlexBetween>
           <EditOutlined sx={{ color: main }} />
