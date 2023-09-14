@@ -1,0 +1,15 @@
+{
+  "name": "instagram-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js", // Start your Node.js server
+    "client-install": "cd client && npm install", // Install client dependencies
+    "client-build": "cd client && npm run build", // Build the React client for production
+    "start-client": "cd client && npm start", // Start the React client
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
